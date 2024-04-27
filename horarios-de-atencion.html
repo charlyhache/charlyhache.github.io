@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HERRERIA G horarios</title>
+    <link rel="stylesheet" href="style.css">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
-<body bgcolor="black" text="orange">
-        <header>
+<body>
+        <header class="header">
             <nav>
-                <img src="herreriag.jpg" alt="herrero soldando" width="500px"> 
+                 
                 <h1>HERRERIA G</h1>
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
@@ -20,47 +25,54 @@
             </nav>
     
         </header>
-        <table border="3">
-            <tr>
-                <td><center><b>Dias</b></center></td>
-                <td><center><b>Horarios de atencion</b></center></td>
-            </tr> 
-            <tr>
-                <td><center><i>Lunes</i></center></td>
-                <td rowspan="4"><center><i> 8 a 17 hs</i></center> </td>
-            </tr>
-            <tr>
-                <td><center><i>martes</i></center></td>
-            </tr>
-            <tr>
-                <td><center><i>miercoles</i></center></td>
-            </tr>
-            <tr>
-                <td><center><i>jueves</i></center></td>
+        <main class="main">
+
+            <table border="3" class="horarios">
+                <tr>
+                    <td><center><b><h1>Dias</h1></b></center></td>
+                    <td><center><b><h1>Horarios de atencion</h1></b></center></td>
+                </tr> 
+                <tr>
+                    <td  class="lunes-a-jueves"><center><b>Lunes</b></center></td>
+                    <td rowspan="4" class="horarios-laj"><center><i> 8 a 17 hs</i></center> </td>
+                </tr>
+                <tr>
+                    <td class="lunes-a-jueves"><center><b>Martes</b></center></td>
+                </tr>
+                <tr>
+                    <td class="lunes-a-jueves"><center><b>Miercoles</b></center></td>
+                </tr>
+                <tr>
+                    <td class="lunes-a-jueves"><center><b>Jueves</b></center></td>
+                    
                 
+                </tr>
+                <tr>
+                    <td class="viernes"><center><b>Viernes</b></center></td>
+                    <td class="horarios-v"><center><i>8 a 16 hs</i></center></td>
+                   
+                </tr>
             
-            </tr>
-            <tr>
-                <td><center><i>viernes</i></center></td>
-                <td><center><i>8 a 16 hs</i></center></td>
                
-            </tr>
-            <tr>
-                <td><center><i>sabado</i></center></td>
-                <td><center><i>9 a 13 hs</i></center></td>
-            </tr>
+                <tr>
+                    <td class="sabado"><center><b>Sabado</b></center></td>
+                    <td class="horarios-s"><center><i>9 a 13 hs</i></center></td>
+                </tr>
         
-            
-        </table> 
+                
+            </table> 
+
+        </main>
+        
     
         
-         <footer>
+         <footer class="footer">
             <ul>
-                <li><a href=""><img src="inst.jfif" alt="" width="20"></a></li>
-                <li><a href=""><img src="whats.jfif" alt="" width="20"></a></li>
-                <li><a href=""><img src="facebook.png" alt="" width="20"></a></li>
+                <li><a href=""><img src="inst.jfif" alt="" width="20"></a></li><br>
+                <li><a href=""><img src="whats.jfif" alt="" width="20"></a></li><br>
+                <li><a href=""><img src="facebook.png" alt="" width="20"></a></li><br>
             </ul>
-            <h6>Pagina realizada por Charly Hache</h6>
+            <h6><center>Pagina realizada por Charly Hache</center></h6>
     
          </footer>
          
