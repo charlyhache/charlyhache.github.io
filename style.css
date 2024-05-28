@@ -2,6 +2,8 @@
 
     padding: 0px;
     margin: 0px;
+    font-family: "Platypi", serif;
+    
 
 
 
@@ -9,188 +11,233 @@
 }
 
 body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  body > * {
+    width: 100%;
+    border-bottom-width: 0;
+    box-sizing: border-box;
+    text-align: left;
+  }
+  
+ 
+  
+ 
+  
+  aside {
+    width: 25%;
+    margin-top: 150px;
+  
+}
+  
+  
+header {
+    
+    grid-area: header;
+    width: 100%;
+    height: 20%;
+    justify-content: left;
+    font-size:x-large;
+
+    
+    
+}
+.navbar{
+    width: 100% !important;
+    justify-content:left !important;
+    background-color: rgb(76, 71, 153) !important;
+    background-image:url(./imagenes/shutterstock_791080666-scaled-1.jpg);
+    background-position: center;
+    background-origin: unset;
+    background-position-y: 500px;
+
+}
+.navbar-brand{
+    width: 100% !important;
+    height: 50%;
+    position: inherit;
+    color: rgb(255, 0, 0) !important;
+    
+}
+
+
+.navbar-collapse{
+    width: 100% !important;
+    height: 50px;
+    justify-content: left !important;
+    
+}
+
+
+body {
 
     color: white;
-    background-color: rgba(65, 63, 63, 0.856);
+    background-color: rgba(112, 112, 112, 0.514) !important;
+    background-image: url(./imagenes/213-2130262_metal-background-steel-background-metal-mesh-texture-background.jpg);
     font-family: "Platypi", serif;
 
 }
 
 
-
-.contenedor {
-    display: grid;
-    grid-template-areas: "header header header"
-                         "main  aside    aside"
-                         "footer footer footer";
+a {
+    list-style: none;
+    color: white !important;
+    text-decoration: none;
+    font-weight: bold;
 }
-
-header {
-    grid-area: header;
-    font-size: 20px;
-    background-color: rgba(82, 80, 87, 0.603);
-    background-repeat: no-repeat;
-    background-position: center;
-
-
+a:hover {
+    color: rgb(255, 0, 0) !important;
 }
-
+ 
 main {
     grid-area: main;
+    width: 70%;
+    margin: 7px;
+    color: rgb(0, 0, 0);
+    font-size: 1.4em;
+    
 }
 
-aside {
+article{
+    padding-left: 10px;
+}
+aside#left {
+    font-family: "Platypi", serif;
     grid-area: aside;
+    width: 30%;
+    margin-top: 150px;
+    color: blueviolet;
+    font-size: 1.3em;
+    text-align: center;
+    /*background-color: rgb(92, 91, 91);*/
 }
 
 footer {
     grid-area: footer;
-}
-
-/*.header {
-    font-size: 20px;
-    background-color: rgb(41, 3, 129);
-    background-image: url(imagenes/shutterstock_791080666-scaled-1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: rgb(49, 49, 138);
+    margin: 10px;
     width: 100%;
-    height: 100%;
-
-
-}*/
-nav {
-    float: right;
-
-}
-
-ul,
-li {
-    list-style: none;
-    margin-left: 75px;
-    margin-right: 75px;
-    padding: 25px 0;
-    float: left;
-    position: relative;
-}
-
-ul,
-li,
-a {
-    list-style: none;
-    color: antiquewhite;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-a {
-    list-style: none;
-    color: blanchedalmond;
-}
-
-a:hover {
-    color: orangered;
-}
-
-/*.lista{
-    display: flex;
-    list-style: none;
-    color: rgb(238, 245, 250);
-    text-decoration: none;
+    height: 80px;
+    color: rgb(255, 255, 255);
+    font-size: 1.4em;
     text-align: center;
-    
-}*/
-
-
-
-
-
-.main {
-    background-color: rgb(169, 169, 169);
-
-
+    border: 3px rgba(15, 14, 14, 0.877) solid;
+    border-radius: 15px;
 }
 
-.aside {
-    text-align: center;
 
-}
+
 
 .parrafo-aside {
-    background-color: rgb(92, 91, 91);
+    background-color: rgba(49, 49, 138, 0.6);
     border: 4px rgb(49, 48, 48);
     border-radius: 10px;
-    color: rgb(179, 241, 228);
-    font-size: 1.5em;
+    color: rgb(178, 230, 218);
+    font-size: 1em;
+    margin: 10px;
+    
+}
+
+.main{
+
+    justify-content:left;
 }
 
 
-
-.footer {
-    background-color: rgb(169, 169, 169);
-    border: 5px rgba(15, 14, 14, 0.877) solid;
-    border-radius: 15px;
-    width: 100%;
-    height: 50%;
-
-}
 
 .footerlista {
     display: flex;
-    
-
+    flex-direction:initial;
+    position: relative;
+    justify-content:center;
+    background-color: rgb(255, 252, 252);
+    border-radius: 10px;
 }
 
+
+li {
+    
+    background-color: rgba(49, 49, 138, 0.644);
+    list-style: none;
+    width: 100%;
+    height: 30%;
+    text-align: center;
+
+    
+}
+
+
+
 p,
-h1,
 h4 {
     color: rgb(1, 54, 1);
     font-style: normal;
     font-family: "Platypi", serif;
-    font-size: 1.6em;
+    font-size: 1em;
+    
 
     /*atributos de parrafos index*/
-
+}
+p{
+    font-family: "Platypi", serif;
+    padding: 20px;
+    margin-left:  5px;
+    border: 4px black solid;
+    border-radius: 10px;
+    background-color: rgba(148, 148, 148, 0.712);
+    
 
 }
 
-h1 {
-    color: rgb(255, 145, 0);
-    font-size: 2.5em;
+h1{
+    font-family: "Platypi", serif;
+    color: rgba(255, 0, 0, 0.726) !important;
+    font-size: 4em !important;
+}
+h2{
+    font-family: "Platypi", serif;
+    color: rgb(255, 0, 0);
+    text-align: center;
+    font-size: 2em;
+}
+h3{
+    font-family: "Platypi", serif;
+    color: (255, 0, 0);
+    text-align: left;
+    font-size: 1.8em;
+    padding-left: 5px;
 }
 
 h4 {
+    font-family: "Platypi", serif;
     color: black;
     font-size: 1.5em;
+    text-align: left;
+    padding-left: 5px
+}
+h5{
+    font-family: "Platypi", serif;
+    color: rgb(255, 0, 0) !important;
+    font-size: 1.4em;
+    text-align: center;
 }
 
-main,
-h4 {
-    color: rgb(153, 14, 25);
-    font-size: 1.5em;
-}
-
-aside {
-    color: blueviolet;
-    font-size: 1.3em;
-    /*background-color: rgb(92, 91, 91);*/
-}
 
 h6 {
+    font-family: "Platypi", serif;
     text-align: center;
+    color: gainsboro;
+    font-size: 0.8em;
 }
 
-footer {
-    color: rgb(48, 0, 94);
-    font-size: 1.4em;
-    /*background-color: rgb(92, 91, 91);*/
-    border: 4px rgb(49, 48, 48);
-    border-radius: 10px;
-    text-align: center;
-
-
+form{
+    font-family: "Platypi", serif;
+    color: black;
+    font-size: small;
 }
-
 
 /*tabla de horarios*/
 
@@ -239,3 +286,29 @@ footer {
 
 
 }
+
+.main-galeria{
+    grid-area: main;
+    justify-content: center;
+    width:50%;
+    margin: 7px;
+    color: rgb(0, 0, 0);
+    font-size: 1.4em;
+    
+}
+
+.horarios-main{
+
+    
+    width:75%;
+    height: 40%;
+    margin: 20px;
+    
+    font-size: 0.7em;
+}
+
+
+    
+
+
+
